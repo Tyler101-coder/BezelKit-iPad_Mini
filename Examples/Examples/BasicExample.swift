@@ -1,19 +1,10 @@
-
 import SwiftUI
-import Bezel
+import BezelKit
 
 struct BasicExample: View {
-    
     var body: some View {
         Bezel {
-            VStack {
-                Image(systemName: "iphone")
-                    .font(.largeTitle)
-
-                Text("Hello Bezel")
-                    .font(.title)
-            }
-            .padding()
+            Text("Hello, BezelKit!")
         }
     }
 }
