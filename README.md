@@ -40,7 +40,7 @@ Add Bezel to your `Package.swift`:
 ```swift
 dependencies: [
     .package(
-        url: "https://github.com/OneCloudDevelopers/Bezel.git",
+        url: "https://github.com/Tyler101-coder/Bezel.git",
         from: "1.0.0"
     )
 ]
