@@ -1,0 +1,165 @@
+# Bezel
+
+A realistic SwiftUI device frame library that lets you wrap any SwiftUI view inside a beautifully rendered device bezel.
+
+Bezel is designed to be simple:
+
+```swift
+import Bezel
+
+struct ContentView: View {
+    var body: some View {
+        Bezel {
+            DemoView()
+        }
+    }
+}
+```
+
+---
+
+## Features
+
+- SwiftUI-native
+- Automatic scaling
+- Rounded display clipping
+- Realistic device bezels
+- Dynamic Island support
+- iPhone support
+- iPad support
+- Lightweight
+- No external dependencies
+- Easy integration with Swift Package Manager
+
+---
+
+## Installation
+
+Add Bezel to your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(
+        url: "https://github.com/OneCloudDevelopers/Bezel.git",
+        from: "1.0.0"
+    )
+]
+```
+
+Then add the product to your target:
+
+```swift
+.target(
+    name: "MyApp",
+    dependencies: [
+        "Bezel"
+    ]
+)
+```
+
+---
+
+## Basic Usage
+
+```swift
+import SwiftUI
+import Bezel
+
+struct ContentView: View {
+    var body: some View {
+        Bezel {
+            NavigationStack {
+                Text("Hello, Bezel!")
+            }
+        }
+    }
+}
+```
+
+---
+
+## Example
+
+```swift
+import SwiftUI
+import Bezel
+
+struct DemoView: View {
+    var body: some View {
+        VStack(spacing: 20) {
+            Image(systemName: "iphone")
+                .font(.largeTitle)
+
+            Text("Welcome to Bezel")
+                .font(.title.bold())
+
+            Text("Render your app inside a realistic device frame.")
+                .multilineTextAlignment(.center)
+        }
+        .padding()
+    }
+}
+
+struct ContentView: View {
+    var body: some View {
+        Bezel {
+            DemoView()
+        }
+    }
+}
+```
+
+---
+
+## Why Bezel?
+
+Most preview libraries only draw a rounded rectangle around your content.
+
+Bezel focuses on creating a realistic device presentation experience while keeping the API extremely simple:
+
+```swift
+Bezel {
+    YourView()
+}
+```
+
+No complex configuration is required.
+
+---
+
+## Requirements
+
+- iOS 17.0+
+- Swift 5.9+
+- Xcode 15+ or Swift Playgrounds
+
+---
+
+## Roadmap
+
+Planned features include:
+
+- Additional iPhone models
+- Additional iPad models
+- Dynamic Island variations
+- Hardware button customization
+- Device profile system
+- Landscape and portrait modes
+- Enhanced hardware rendering
+- Accessibility improvements
+
+---
+
+## Contributing
+
+Contributions, bug reports, feature requests, and suggestions are welcome.
+
+If you discover an issue or have an idea for improvement, please open an issue on GitHub.
+
+---
+
+## License
+
+Copyright © 2026 OneCloud Developers.
+
+All Rights Reserved.
