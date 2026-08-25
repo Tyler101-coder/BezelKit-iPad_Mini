@@ -41,7 +41,7 @@ import BezelKit
 struct ContentView: View {
     var body: some View {
         Bezel {
-         Text(“Hello, Bezel!”)
+         Text("Hello, Bezel!")
         }
     }
 }
