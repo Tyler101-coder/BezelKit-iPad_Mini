@@ -18,14 +18,13 @@ struct ContentView: View {
 
 ---
 
-## Features
+## Features 
 
 - SwiftUI-native
-- Automatic scaling
 - Rounded display clipping
-- Realistic device bezels
-- Dynamic Island support
-- iPhone support
+- Realistic device bezels (Coming Soon)
+- Dynamic Island support (Comming Soon, only Notch is available)
+- iPhone support (Coming Soon)
 - iPad support
 - Lightweight
 - No external dependencies
