@@ -5,7 +5,7 @@ A realistic SwiftUI device frame library that lets you wrap any SwiftUI view ins
 Bezel is designed to be simple:
 
 ```swift
-import Bezel
+import BezelKit
 
 struct ContentView: View {
     var body: some View {
@@ -33,44 +33,15 @@ struct ContentView: View {
 
 ---
 
-## Installation
-
-Add Bezel to your `Package.swift`:
-
-```swift
-dependencies: [
-    .package(
-        url: "https://github.com/Tyler101-coder/Bezel.git",
-        from: "1.0.0"
-    )
-]
-```
-
-Then add the product to your target:
-
-```swift
-.target(
-    name: "MyApp",
-    dependencies: [
-        "Bezel"
-    ]
-)
-```
-
----
-
 ## Basic Usage
 
 ```swift
-import SwiftUI
-import Bezel
+import BezelKit
 
 struct ContentView: View {
     var body: some View {
         Bezel {
-            NavigationStack {
-                Text("Hello, Bezel!")
-            }
+         Text(“Hello, Bezel!”)
         }
     }
 }
@@ -82,7 +53,7 @@ struct ContentView: View {
 
 ```swift
 import SwiftUI
-import Bezel
+import BezelKit
 
 struct DemoView: View {
     var body: some View {
