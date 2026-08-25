@@ -3,30 +3,53 @@
 import PackageDescription
 
 let package = Package(
-    name: "Bezel",
-    
+    name: "BezelKit",
+
+    defaultLocalization: "en",
+
     platforms: [
-        .iOS(.v17)
+        .iOS(.v17),
+        .macOS(.v14),
+        .tvOS(.v17),
+        .visionOS(.v1)
     ],
-    
+
     products: [
         .library(
-            name: "Bezel",
-            targets: ["Bezel"]
+            name: "BezelKit",
+            targets: ["BezelKit"]
         )
     ],
-    
+
+    dependencies: [
+        // Add future dependencies here.
+    ],
+
     targets: [
-        
-        // Main Package
+
+        // Main Library
         .target(
-            name: "Bezel"
+            name: "BezelKit",
+            dependencies: [],
+            path: "Sources/BezelKit",
+            resources: [
+                // Add package resources here if needed.
+            ],
+            swiftSettings: [
+                .enableUpcomingFeature("ExistentialAny"),
+                .enableUpcomingFeature("StrictConcurrency")
+            ]
         ),
-        
+
         // Unit Tests
         .testTarget(
-            name: "BezelTests",
-            dependencies: ["Bezel"]
+            name: "BezelKitTests",
+            dependencies: ["BezelKit"],
+            path: "Tests/BezelKitTests"
         )
+    ],
+
+    swiftLanguageModes: [
+        .v6
     ]
 )
