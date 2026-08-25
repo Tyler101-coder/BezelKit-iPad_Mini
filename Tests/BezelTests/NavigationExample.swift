@@ -1,5 +1,5 @@
 import SwiftUI
-import Bezel
+import BezelKit
 
 struct NavigationExample: View {
 
