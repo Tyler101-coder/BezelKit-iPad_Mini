@@ -1,7 +1,7 @@
 import XCTest
-@testable import Bezel
+@testable import BezelKit
 
-final class BezelTests: XCTestCase {
+final class BezelKitTests: XCTestCase {
 
     func testPackageLoads() {
         XCTAssertTrue(true)
